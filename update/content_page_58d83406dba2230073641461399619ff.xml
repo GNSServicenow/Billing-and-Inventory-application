@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update node_type="content_page" unload_date="2019-01-07 06:08:52">
+    <sys_portal action="delete_multiple" query="page=58d83406dba2230073641461399619ff">
+        <related_items_node>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone2</dropzone>
+                <offset>0</offset>
+                <page display_value="">58d83406dba2230073641461399619ff</page>
+                <summary/>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2019-01-02 11:10:18</sys_created_on>
+                <sys_id>8e88dbf0dbb22300736414613996192a</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2019-01-02 11:10:18</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 02-01-2019 11:10:18">8e88dbf0dbb22300736414613996192a</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2019-01-02 11:10:18</sys_created_on>
+                        <sys_id>0288dbf0dbb22300736414613996192b</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2019-01-02 11:10:18</sys_updated_on>
+                        <value>4001e684db002300736414613996194c</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>current_page</name>
+                        <portal_section display_value="Created 02-01-2019 11:10:18">8e88dbf0dbb22300736414613996192a</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2019-01-02 11:10:18</sys_created_on>
+                        <sys_id>0288dbf0dbb22300736414613996192c</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2019-01-02 11:10:18</sys_updated_on>
+                        <value>58d83406dba2230073641461399619ff</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 02-01-2019 11:10:18">8e88dbf0dbb22300736414613996192a</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2019-01-02 11:10:18</sys_created_on>
+                        <sys_id>8688dbf0dbb22300736414613996192b</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2019-01-02 11:10:18</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderMenus</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 02-01-2019 11:10:18">8e88dbf0dbb22300736414613996192a</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2019-01-02 11:10:18</sys_created_on>
+                        <sys_id>8a88dbf0dbb22300736414613996192b</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2019-01-02 11:10:18</sys_updated_on>
+                        <value>GNS Inventory</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+            <sys_portal action="INSERT_OR_UPDATE">
+                <dropzone>dropzone1</dropzone>
+                <offset>0</offset>
+                <page display_value="">58d83406dba2230073641461399619ff</page>
+                <summary/>
+                <sys_created_by>admin</sys_created_by>
+                <sys_created_on>2019-01-02 11:10:18</sys_created_on>
+                <sys_id>f988dbf0dbb223007364146139961918</sys_id>
+                <sys_mod_count>0</sys_mod_count>
+                <sys_updated_by>admin</sys_updated_by>
+                <sys_updated_on>2019-01-02 11:10:18</sys_updated_on>
+                <related_items_node>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>renderer</name>
+                        <portal_section display_value="Created 02-01-2019 11:10:18">f988dbf0dbb223007364146139961918</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2019-01-02 11:10:18</sys_created_on>
+                        <sys_id>3988dbf0dbb223007364146139961919</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2019-01-02 11:10:18</sys_updated_on>
+                        <value>com.glide.ui.portal.RenderMenus</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>title</name>
+                        <portal_section display_value="Created 02-01-2019 11:10:18">f988dbf0dbb223007364146139961918</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2019-01-02 11:10:18</sys_created_on>
+                        <sys_id>3d88dbf0dbb223007364146139961919</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2019-01-02 11:10:18</sys_updated_on>
+                        <value>GNS_billing</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>sys_id</name>
+                        <portal_section display_value="Created 02-01-2019 11:10:18">f988dbf0dbb223007364146139961918</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2019-01-02 11:10:18</sys_created_on>
+                        <sys_id>7d88dbf0dbb223007364146139961918</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2019-01-02 11:10:18</sys_updated_on>
+                        <value>9645516edb53130073641461399619ca</value>
+                    </sys_portal_preferences>
+                    <sys_portal_preferences action="INSERT_OR_UPDATE">
+                        <name>current_page</name>
+                        <portal_section display_value="Created 02-01-2019 11:10:18">f988dbf0dbb223007364146139961918</portal_section>
+                        <sys_created_by>admin</sys_created_by>
+                        <sys_created_on>2019-01-02 11:10:18</sys_created_on>
+                        <sys_id>8288dbf0dbb22300736414613996191a</sys_id>
+                        <sys_mod_count>0</sys_mod_count>
+                        <sys_updated_by>admin</sys_updated_by>
+                        <sys_updated_on>2019-01-02 11:10:18</sys_updated_on>
+                        <value>58d83406dba2230073641461399619ff</value>
+                    </sys_portal_preferences>
+                </related_items_node>
+            </sys_portal>
+        </related_items_node>
+    </sys_portal>
+    <content_page action="INSERT_OR_UPDATE">
+        <content_site display_value="Test1">dfa8b006dba2230073641461399619a9</content_site>
+        <content_theme/>
+        <description/>
+        <frame_buster>false</frame_buster>
+        <layout display_value="layout_overview">1a656051d7030200eaae68150e610399</layout>
+        <model_id/>
+        <model_table/>
+        <name>TestHomePage</name>
+        <order/>
+        <parent_page/>
+        <read_roles>admin,x_249281_gns.billing_user</read_roles>
+        <roles/>
+        <selectable>true</selectable>
+        <sys_class_name>content_page</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-12-24 10:29:47</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>58d83406dba2230073641461399619ff</sys_id>
+        <sys_mod_count>53</sys_mod_count>
+        <sys_name>TestHomePage</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GNS" source="x_249281_gns">b3f0adeedb53130073641461399619a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GNS">b3f0adeedb53130073641461399619a5</sys_scope>
+        <sys_update_name>content_page_58d83406dba2230073641461399619ff</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-01-02 11:10:18</sys_updated_on>
+        <title/>
+        <url_suffix>home</url_suffix>
+        <user/>
+        <view/>
+        <workflow_state>published</workflow_state>
+    </content_page>
+</record_update>

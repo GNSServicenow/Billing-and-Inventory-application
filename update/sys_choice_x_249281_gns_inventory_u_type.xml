@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_type" table="x_249281_gns_inventory" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Admin</label>
+            <language>en</language>
+            <name>x_249281_gns_inventory</name>
+            <sequence>1</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-29 14:19:35</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>ef7b4b58db14230073641461399619cc</sys_id>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_updated_by>manas.kandekar</sys_updated_by>
+            <sys_updated_on>2018-09-18 10:44:31</sys_updated_on>
+            <value>Admin</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>HR</label>
+            <language>en</language>
+            <name>x_249281_gns_inventory</name>
+            <sequence>2</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-29 14:20:30</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>d5ab0b18db14230073641461399619cb</sys_id>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_updated_by>manas.kandekar</sys_updated_by>
+            <sys_updated_on>2018-09-18 10:44:31</sys_updated_on>
+            <value>HR</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>IT &amp; Network</label>
+            <language>en</language>
+            <name>x_249281_gns_inventory</name>
+            <sequence>3</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-29 14:18:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>641b4758db1423007364146139961917</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>manas.kandekar</sys_updated_by>
+            <sys_updated_on>2018-09-18 10:44:31</sys_updated_on>
+            <value>It_network</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Telephone/Dongle</label>
+            <language>en</language>
+            <name>x_249281_gns_inventory</name>
+            <sequence>4</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-29 14:20:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>6e8bcb58db142300736414613996199e</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>manas.kandekar</sys_updated_by>
+            <sys_updated_on>2018-09-18 10:44:31</sys_updated_on>
+            <value>Telephone_dongle</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_type</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Other</label>
+            <language>en</language>
+            <name>x_249281_gns_inventory</name>
+            <sequence>5</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-29 14:20:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fbbb0358db1423007364146139961996</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>manas.kandekar</sys_updated_by>
+            <sys_updated_on>2018-09-18 10:44:31</sys_updated_on>
+            <value>Other</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_type</element>
+            <name>x_249281_gns_inventory</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-29 14:18:13</sys_created_on>
+            <sys_id>c23bcb18db1423007364146139961924</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_type</sys_name>
+            <sys_package display_value="GNS" source="x_249281_gns">b3f0adeedb53130073641461399619a5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="GNS">b3f0adeedb53130073641461399619a5</sys_scope>
+            <sys_update_name>sys_choice_x_249281_gns_inventory_u_type</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-29 14:18:13</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

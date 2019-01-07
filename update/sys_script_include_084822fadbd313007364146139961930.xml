@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_249281_gns.GNS_billing</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>GNS_billing</name>
+        <script><![CDATA[var GNS_billing = Class.create();
+
+GNS_billing.prototype = Object.extendsObject(global.AbstractAjaxProcessor,  {
+
+	getNextBillNumber: function()
+	{
+		var gr= new GlideRecord('x_249281_gns_billing');
+		gr.orderByDesc('bill_number');
+		gr.setLimit(1);
+		gr.query();
+		
+		var nextBillNumber;
+		while(gr.next())
+			{
+				nextBillNumber = gr.bill_number;
+			}
+		return nextBillNumber;
+	},
+	
+	getAllData: function()
+	{
+		var billNo = this.getParameter('sysparm_bill_number');
+		billNo=parseInt(billNo);
+		var gr= new GlideRecord('x_249281_gns_billing');
+		gr.addQuery('bill_number',billNo);
+		gr.query();
+		
+		var address,
+			vendor,
+			actual_date,
+			gst_num,
+			description,
+			category,
+			bill_status;
+		
+		var json ;
+		
+		while(gr.next())
+			{
+				address = gr.address;
+				description = gr.description;
+				vendor = gr.company_name;
+				actual_date = gr.actual_date;
+				gst_num = gr.gst_number;
+				category = gr.category;
+				bill_status = gr.bill_status;
+												json='{"address":"'+address+'","description":"'+description+'","vendor":"'+vendor+'","actual_date":"'+actual_date+'","gst_num":"'+gst_num+'","category":"'+category+'","bill_status":"'+bill_status+'"}';
+			}
+		
+		return json;
+	},
+	
+	createCatalogItem: function()
+	{
+		var requested_for = this.getParameter('sysparm_requested_for');
+		var description = this.getParameter('sysparm_description');
+		var short_description = this.getParameter('sysparm_short_description');
+		var sysparm_quantity = this.getParameter('sysparm_quantity');
+		var sysparm_amount = this.getParameter('sysparm_amount');
+		
+		var gr= new GlideRecord('sc_req_item');
+		gr.initialize();
+		gr.assigned_to = requested_for;
+		gr.description = description;
+		gr.comments = short_description;
+		gr.price = sysparm_amount;
+		gr.quantity = sysparm_quantity;
+		gr.insert();
+		
+	},
+
+	getVendorAddress: function()
+	{
+		var vendor = this.getParameter('sysparm_vendor');
+		var address;
+		
+		var gr= new GlideRecord('core_company');
+		gr.addQuery('name',vendor);
+		gr.query();
+		
+		while(gr.next())
+			{
+				if(gr.street!='')
+					{
+						address=gr.street+', ';
+					}
+				if(gr.city!='')
+					{
+						address+=gr.city+', ';
+					}
+				if(gr.state!='')
+					{
+						address+=gr.state+', ';
+					}
+				if(gr.country!='')
+					{
+						address+=gr.country+' ';
+					}
+				if(gr.zip!='')
+					{
+						address+=gr.zip;
+					}
+			}
+		return address;
+	},
+	
+	startWorkflow:function()
+	{
+		var vars={};
+		
+			var wflw = new global.Workflow();
+			var context = wflw.startFlow('1b73f322dba313007364146139961904',current,'update', vars);
+	
+	if(context!= null)
+		{
+			current.context= context.sys_id;
+			current.update();
+		}
+	
+	},
+	
+	triggerWorkflowEvent:function()
+	{
+		var wf = new global.Workflow();
+		wf.fireEvent('gnsbilling_approval_rejection');
+	},
+	
+	getVendorGST: function()
+	{
+		var vendor = this.getParameter('sysparm_vendor');
+		var gst;
+		
+		var gr= new GlideRecord('core_company');
+		gr.addQuery('name',vendor);
+		gr.query();
+		
+		while(gr.next())
+			{
+				if(gr.notes!='')
+					{
+						gst=gr.notes;
+					}
+			}
+		return gst;
+	},
+	
+    type: 'GNS_billing'
+ 
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-18 13:08:28</sys_created_on>
+        <sys_id>084822fadbd313007364146139961930</sys_id>
+        <sys_mod_count>72</sys_mod_count>
+        <sys_name>GNS_billing</sys_name>
+        <sys_package display_value="GNS" source="x_249281_gns">b3f0adeedb53130073641461399619a5</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="GNS">b3f0adeedb53130073641461399619a5</sys_scope>
+        <sys_update_name>sys_script_include_084822fadbd313007364146139961930</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-14 12:39:19</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_stages" table="x_249281_gns_inventory" version="3">
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_stages</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Draft</label>
+            <language>en</language>
+            <name>x_249281_gns_inventory</name>
+            <sequence>0</sequence>
+            <sys_created_by>parshuram.kulkarni</sys_created_by>
+            <sys_created_on>2018-08-30 06:58:59</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e52076acdb10230073641461399619a7</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-09-12 13:07:52</sys_updated_on>
+            <value>u_draft</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_stages</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Delivered</label>
+            <language>en</language>
+            <name>x_249281_gns_inventory</name>
+            <sequence>1</sequence>
+            <sys_created_by>parshuram.kulkarni</sys_created_by>
+            <sys_created_on>2018-08-30 07:04:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>965136ecdb10230073641461399619ad</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-09-12 13:27:13</sys_updated_on>
+            <value>u_delivered</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_stages</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>In transition</label>
+            <language>en</language>
+            <name>x_249281_gns_inventory</name>
+            <sequence>1</sequence>
+            <sys_created_by>parshuram.kulkarni</sys_created_by>
+            <sys_created_on>2018-08-30 07:01:46</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b4d0feacdb10230073641461399619eb</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-09-12 13:07:52</sys_updated_on>
+            <value>u_in_transition</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_stages</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Received</label>
+            <language>en</language>
+            <name>x_249281_gns_inventory</name>
+            <sequence>2</sequence>
+            <sys_created_by>parshuram.kulkarni</sys_created_by>
+            <sys_created_on>2018-08-30 07:02:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c201b2ecdb10230073641461399619dd</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-09-12 13:28:52</sys_updated_on>
+            <value>u_recieved</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_stages</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Request approval</label>
+            <language>en</language>
+            <name>x_249281_gns_inventory</name>
+            <sequence>2</sequence>
+            <sys_created_by>parshuram.kulkarni</sys_created_by>
+            <sys_created_on>2018-08-30 06:59:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c650b6acdb1023007364146139961908</sys_id>
+            <sys_mod_count>5</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-09-12 13:07:52</sys_updated_on>
+            <value>u_requested</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_stages</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Shipment preparation</label>
+            <language>en</language>
+            <name>x_249281_gns_inventory</name>
+            <sequence>3</sequence>
+            <sys_created_by>parshuram.kulkarni</sys_created_by>
+            <sys_created_on>2018-08-30 07:00:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3c80faacdb1023007364146139961933</sys_id>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-09-12 13:07:52</sys_updated_on>
+            <value>u_shipment_preparation</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_stages</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cancelled</label>
+            <language>en</language>
+            <name>x_249281_gns_inventory</name>
+            <sequence>4</sequence>
+            <sys_created_by>parshuram.kulkarni</sys_created_by>
+            <sys_created_on>2018-08-30 07:03:12</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e03176ecdb1023007364146139961977</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-09-12 13:07:52</sys_updated_on>
+            <value>u_cancelled</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_stages</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Received</label>
+            <language>en</language>
+            <name>x_249281_gns_inventory</name>
+            <sequence>5</sequence>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-09-12 13:07:52</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>c06103bcdb28630073641461399619cc</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-09-12 13:07:52</sys_updated_on>
+            <value>u_received</value>
+        </sys_choice>
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_stages</element>
+            <name>x_249281_gns_inventory</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>parshuram.kulkarni</sys_created_by>
+            <sys_created_on>2018-08-30 06:58:59</sys_created_on>
+            <sys_id>7140f6acdb1023007364146139961936</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_stages</sys_name>
+            <sys_package display_value="GNS" source="x_249281_gns">b3f0adeedb53130073641461399619a5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="GNS">b3f0adeedb53130073641461399619a5</sys_scope>
+            <sys_update_name>sys_choice_x_249281_gns_inventory_u_stages</sys_update_name>
+            <sys_updated_by>parshuram.kulkarni</sys_updated_by>
+            <sys_updated_on>2018-08-30 06:58:59</sys_updated_on>
+        </sys_choice_set>
+    </sys_choice>
+</record_update>

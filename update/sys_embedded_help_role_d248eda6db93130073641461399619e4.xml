@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_embedded_help_role">
+    <sys_embedded_help_role action="INSERT_OR_UPDATE">
+        <order>1000</order>
+        <role display_value="x_249281_gns.billing_user" name="x_249281_gns.billing_user">d648eda6db93130073641461399619e2</role>
+        <sys_class_name>sys_embedded_help_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-17 13:49:30</sys_created_on>
+        <sys_id>d248eda6db93130073641461399619e4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>d648eda6db93130073641461399619e2</sys_name>
+        <sys_package display_value="GNS" source="x_249281_gns">b3f0adeedb53130073641461399619a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GNS">b3f0adeedb53130073641461399619a5</sys_scope>
+        <sys_update_name>sys_embedded_help_role_d248eda6db93130073641461399619e4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-17 13:49:30</sys_updated_on>
+    </sys_embedded_help_role>
+</record_update>

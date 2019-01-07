@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Inventory" max_length="40" name="x_249281_gns_inventory" type="collection">
+        <element label="What else do u require ?" max_length="40" name="other" type="string"/>
+        <element label="Additional  gift" max_length="40" name="u_add_gift" type="string"/>
+        <element label="Description/title" max_length="40" name="u_adminname" type="string"/>
+        <element label="Computer accessories" max_length="40" name="u_computer_accessories" type="boolean"/>
+        <element label="Cost" max_length="10" name="u_cost" type="string"/>
+        <element label="CPU" max_length="40" name="u_cpu" type="boolean"/>
+        <element label="Delivery Date" max_length="10" name="u_delivery_date" type="glide_date"/>
+        <element label="Description" max_length="40" name="u_description" type="string"/>
+        <element label="Desktop/Laptop" max_length="10" name="u_desktop_laptop" type="boolean"/>
+        <element label="Device/Equipment" max_length="40" name="u_device_equipment" type="string"/>
+        <element label="Drop of Request" max_length="40" name="u_drop_of_request" type="boolean"/>
+        <element label="Gifts" max_length="40" name="u_gifts" type="string"/>
+        <element label="Keyborad" max_length="10" name="u_keyboard" type="boolean"/>
+        <element label="License" max_length="40" name="u_license" type="string"/>
+        <element label="Location" max_length="40" name="u_location" reference="x_249281_gns_billing" reference_qual="addressISNOTEMPTY^EQ" reference_qual_condition="addressISNOTEMPTY^EQ" type="reference"/>
+        <element label="Product Serial Number" max_length="40" name="u_model_number" type="string"/>
+        <element label="Mouse" max_length="10" name="u_mouse" type="boolean"/>
+        <element label="Number" max_length="40" name="u_number" read_only="true" type="integer" unique="true"/>
+        <element label="Other" max_length="40" name="u_other" type="boolean"/>
+        <element label="What else do you require ?" max_length="40" name="u_other_field" type="string"/>
+        <element label="Printer" max_length="10" name="u_printer" type="boolean"/>
+        <element label="Quantity" max_length="10" name="u_quantity" type="integer"/>
+        <element label="Remark" max_length="40" name="u_remark" type="string"/>
+        <element label="Requested Date" max_length="40" name="u_requested_date" type="glide_date"/>
+        <element label="Sr. No." max_length="40" name="u_serial_no" type="string"/>
+        <element choice="3" default="u_draft" label="Stages" max_length="40" name="u_stages" type="string">
+            <choice>
+                <element label="Draft" sequence="0" value="u_draft"/>
+                <element label="In transition" sequence="1" value="u_in_transition"/>
+                <element label="Request approval" sequence="2" value="u_requested"/>
+                <element label="Shipment preparation" sequence="3" value="u_shipment_preparation"/>
+                <element label="Cancelled" sequence="4" value="u_cancelled"/>
+                <element label="Received" sequence="5" value="u_received"/>
+            </choice>
+        </element>
+        <element label="Stationary" max_length="40" name="u_stationary" type="string"/>
+        <element label="Sum/ Insured Value" max_length="20" name="u_sum_insured_value" type="integer"/>
+        <element label="Telephone/Dongle" max_length="40" name="u_telephone_dongle" type="string"/>
+        <element choice="3" default="--None--" label="Type" max_length="40" name="u_type" type="string">
+            <choice>
+                <element label="Admin" sequence="1" value="Admin"/>
+                <element label="HR" sequence="2" value="HR"/>
+                <element label="IT &amp; Network" sequence="3" value="It_network"/>
+                <element label="Telephone/Dongle" sequence="4" value="Telephone_dongle"/>
+                <element label="Other" sequence="5" value="Other"/>
+            </choice>
+        </element>
+        <element label="Year of Mfg." max_length="40" name="u_year_of_mfg" type="glide_date"/>
+        <index name="index">
+            <element name="u_number"/>
+        </index>
+    </element>
+</database>

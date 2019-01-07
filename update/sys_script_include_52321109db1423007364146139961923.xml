@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_249281_gns.GetNextInvNumber</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>GetNextInvNumber</name>
+        <script><![CDATA[var GetNextInvNumber = Class.create();
+GetNextInvNumber.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	
+getNextNumber: function()
+	{
+	    var lastNumber;
+		var gr= new GlideRecord('x_249281_gns_inventory');
+			
+		gr.orderByDesc('u_number');
+		gr.setLimit(1);
+		gr.query();
+		
+		while(gr.next())
+		   {
+			lastNumber = gr.u_number;
+			return lastNumber;
+			 }
+	},
+    type: 'GetNextInvNumber'
+});
+
+
+	]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>dipak.agrawal</sys_created_by>
+        <sys_created_on>2018-08-31 13:32:02</sys_created_on>
+        <sys_id>52321109db1423007364146139961923</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_name>GetNextInvNumber</sys_name>
+        <sys_package display_value="GNS" source="x_249281_gns">b3f0adeedb53130073641461399619a5</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="GNS">b3f0adeedb53130073641461399619a5</sys_scope>
+        <sys_update_name>sys_script_include_52321109db1423007364146139961923</sys_update_name>
+        <sys_updated_by>parshuram.kulkarni</sys_updated_by>
+        <sys_updated_on>2018-09-06 12:15:53</sys_updated_on>
+    </sys_script_include>
+</record_update>

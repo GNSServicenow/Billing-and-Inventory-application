@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>u_delivery_date</field>
+        <global>true</global>
+        <messages/>
+        <name>On change Inventory</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+	var lastNumber;		
+
+	var num = g_form.getValue('u_number');
+
+	if (num!=='')
+		{
+			var ga = new GlideAjax('GetNextInvNumber');
+			ga.addParam('sysparm_name','getNextNumber');
+			ga.getXML(getCallback);
+		}
+	
+	function getCallback(response)
+	{
+	var answer = response.responseXML.documentElement.getAttribute("answer");
+	
+    lastNumber = parseInt(answer);
+	
+			if(lastNumber == num)
+				{ 
+                    //alert('inif');
+					g_form.clearValue('u_number');	
+					g_form.setValue('u_number',lastNumber + 1);
+					//alert('setting value');	
+				}
+	}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>dipak.agrawal</sys_created_by>
+        <sys_created_on>2018-09-03 07:10:26</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ab195371db50230073641461399619ee</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_name>On change Inventory</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GNS" source="x_249281_gns">b3f0adeedb53130073641461399619a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GNS">b3f0adeedb53130073641461399619a5</sys_scope>
+        <sys_update_name>sys_script_client_ab195371db50230073641461399619ee</sys_update_name>
+        <sys_updated_by>dipak.agrawal</sys_updated_by>
+        <sys_updated_on>2018-09-05 07:09:01</sys_updated_on>
+        <table>x_249281_gns_inventory</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

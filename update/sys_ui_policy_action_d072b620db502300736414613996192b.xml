@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <disabled>ignore</disabled>
+        <field>u_description</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>varsha.saste</sys_created_by>
+        <sys_created_on>2018-08-30 07:08:34</sys_created_on>
+        <sys_id>d072b620db502300736414613996192b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>u_description</sys_name>
+        <sys_package display_value="GNS" source="x_249281_gns">b3f0adeedb53130073641461399619a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GNS">b3f0adeedb53130073641461399619a5</sys_scope>
+        <sys_update_name>sys_ui_policy_action_d072b620db502300736414613996192b</sys_update_name>
+        <sys_updated_by>varsha.saste</sys_updated_by>
+        <sys_updated_on>2018-08-30 07:08:34</sys_updated_on>
+        <table>x_249281_gns_inventory</table>
+        <ui_policy display_value="Desktop/laptops">85d465d8db10230073641461399619f4</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+</record_update>

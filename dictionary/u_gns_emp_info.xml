@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element extends="sys_import_set_row" label="GNS_emp_info" max_length="40" name="u_gns_emp_info" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Code" max_length="40" name="u_code" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Company Email Id" max_length="40" name="u_company_email_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Confirmation Date" max_length="40" name="u_confirmation_date" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Contact Number" max_length="40" name="u_contact_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Designation" max_length="40" name="u_designation" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Employee Name" max_length="40" name="u_employee_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Extension Number" max_length="40" name="u_extension_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="First name" max_length="40" name="u_first_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Joining Date" max_length="40" name="u_joining_date" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Last name" max_length="40" name="u_last_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="location" max_length="40" name="u_location" type="string"/>
+    </element>
+</database>

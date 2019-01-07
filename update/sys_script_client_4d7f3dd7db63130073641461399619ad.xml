@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>actual_date</field>
+        <global>true</global>
+        <messages/>
+        <name>onSubmit (Billing)</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
+	
+
+//		var user = g_user.getFullName();
+// 		var bill_number = g_form.getValue('bill_number');
+// 		var address = g_form.getValue('address');
+// 		var vendor = g_form.getDisplayBox('vendor').value;
+// 		var gst_number = g_form.getValue('gst_number');
+// 		var actual_date = g_form.getValue('actual_date');
+// 		var short_description = g_form.getValue('description');
+// 		var category = g_form.getValue('category');
+// 		var amount = g_form.getValue('amount');
+// 		var quantity = g_form.getValue('quantity');
+			
+// 		var	description =   'Bill number: '+bill_number+
+// 							'\nvendor: '+vendor+
+// 							'\nAddress: '+address+
+// 							'\nGST number: '+gst_number+
+// 							'\nActual date: '+actual_date+
+// 							'\nCategory: '+category;
+				
+// 			var ga = new GlideAjax('GNS_billing');
+// 			ga.addParam('sysparm_requested_for',user);
+// 			ga.addParam('sysparm_quantity',quantity);
+// 			ga.addParam('sysparm_amount',amount);
+// 			ga.addParam('sysparm_description',description);
+// 			ga.addParam('sysparm_short_description',short_description);
+// 			ga.addParam('sysparm_name','createCatalogItem');
+// 			ga.getXML(callbackFunction);	
+			
+			return true;
+}
+
+
+]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-01 09:42:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4d7f3dd7db63130073641461399619ad</sys_id>
+        <sys_mod_count>16</sys_mod_count>
+        <sys_name>onSubmit (Billing)</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GNS" source="x_249281_gns">b3f0adeedb53130073641461399619a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GNS">b3f0adeedb53130073641461399619a5</sys_scope>
+        <sys_update_name>sys_script_client_4d7f3dd7db63130073641461399619ad</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-03 07:15:22</sys_updated_on>
+        <table>x_249281_gns_billing</table>
+        <type>onSubmit</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

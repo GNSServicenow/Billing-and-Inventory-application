@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_249281_gns.GNS_billing_inventory</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>GNS_billing_inventory</name>
+        <script><![CDATA[var GNS_billing_inventory = Class.create();
+GNS_billing_inventory.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+	addBillDataAdmin: function()
+	{
+		var billNum;
+		var description   = this.getParameter('sysparm_description');
+		var location      = this.getParameter('sysparm_location');
+		var req_date      = this.getParameter('sysparm_req_date');
+		var quantity      = parseInt(this.getParameter('sysparm_quantity'));
+		var cost          = parseInt(this.getParameter('sysparm_cost'));
+		var delivery_date = this.getParameter('sysparm_delivery_date');
+		var type          = 'Admin';
+		
+		//calling function of another script include 
+		var billNumClass = new GNS_billing();
+		billNum = billNumClass.getNextBillNumber();
+		billNum = billNum+1;
+		
+		//get month
+		var month = this.getMonth(req_date);
+		
+		//get Vendor name
+		var vendor = this.getVendor(location);
+		
+		var desc = type+': '+description;
+		
+		//to store data in Billing table
+		var gr= new GlideRecord('x_249281_gns_billing');
+		gr.initialize();
+		
+		gr.bill_number = billNum;
+		gr.description = desc;
+		gr.address = location;
+		gr.quantity = quantity;
+		gr.amount = cost;
+		gr.total_amount = quantity * cost;
+		gr.actual_date = req_date;
+		gr.category = 'inventory_bill';
+		gr.bill_status = 'New';
+		gr.generate_po = 'False';
+		gr.po_number = month+'-'+billNum+'_'+vendor+'_'+desc;
+		
+		var temp = gr.insert();
+		return temp;
+	},
+	
+	addBillDataHR: function()
+	{
+		
+	},
+	
+	addBillDataIT: function()
+	{
+		
+	},
+	
+	addBillDataTelephoneDongle: function()
+	{
+		
+	},
+	
+	addBillDataOther: function()
+	{
+		
+	},
+	
+	getMonth: function(req_date)
+	{
+		var month = [];
+		month[0] = "";
+		month[1] = "Jan";
+		month[2] = "Feb";
+		month[3] = "Mar";
+		month[4] = "Apr";
+		month[5] = "May";
+		month[6] = "Jun";
+		month[7] = "Jul";
+		month[8] = "Aug";
+		month[9] = "Sept";
+		month[10] = "Oct";
+		month[11] = "Nov";
+		month[12] = "Dec";
+
+		var mon = parseInt(req_date.split("-")[1]);
+		if(isNaN(mon))
+			{
+				mon=0;
+			}
+		
+		return month[mon];
+	},
+	
+	getVendor: function(address)
+	{
+		var add, vendorName;
+		var gr = new GlideRecord('core_company');
+		gr.query();
+		while(gr.next())
+			{
+				if(gr.street!='')
+					{
+						add=gr.street+', ';
+					}
+				if(gr.city!='')
+					{
+						add+=gr.city+', ';
+					}
+				if(gr.state!='')
+					{
+						add+=gr.state+', ';
+					}
+				if(gr.country!='')
+					{
+						add+=gr.country+' ';
+					}
+				if(gr.zip!='')
+					{
+						add+=gr.zip;
+					}
+				
+				if(address==add)
+					{
+						vendorName = gr.name;
+					}
+			}
+		
+		if(vendorName=='')
+			{
+			return 'No Vendor';
+			}
+		else
+			{
+			return vendorName;
+			}
+	},
+	
+    type: 'GNS_billing_inventory'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>manas.kandekar</sys_created_by>
+        <sys_created_on>2018-09-18 10:03:54</sys_created_on>
+        <sys_id>538e05f6db2c2300736414613996190c</sys_id>
+        <sys_mod_count>8</sys_mod_count>
+        <sys_name>GNS_billing_inventory</sys_name>
+        <sys_package display_value="GNS" source="x_249281_gns">b3f0adeedb53130073641461399619a5</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="GNS">b3f0adeedb53130073641461399619a5</sys_scope>
+        <sys_update_name>sys_script_include_538e05f6db2c2300736414613996190c</sys_update_name>
+        <sys_updated_by>manas.kandekar</sys_updated_by>
+        <sys_updated_on>2018-09-19 06:51:57</sys_updated_on>
+    </sys_script_include>
+</record_update>

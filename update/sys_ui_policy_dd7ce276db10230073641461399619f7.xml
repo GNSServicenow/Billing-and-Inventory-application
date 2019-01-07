@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_policy">
+    <sys_ui_policy action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <conditions table="x_249281_gns_inventory">u_drop_of_request=true^EQ<item endquery="false" field="u_drop_of_request" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </conditions>
+        <description/>
+        <global>true</global>
+        <inherit>false</inherit>
+        <model_id/>
+        <model_table/>
+        <on_load>true</on_load>
+        <order>100</order>
+        <reverse_if_false>true</reverse_if_false>
+        <run_scripts>true</run_scripts>
+        <script_false><![CDATA[function onCondition() {
+
+}]]></script_false>
+        <script_true><![CDATA[function onCondition() {
+g_form.setReadOnly('u_license',true);
+g_form.setReadOnly('u_computer_accessories',true);	
+g_form.setReadOnly('u_adminname',true);	
+	
+	
+}]]></script_true>
+        <set_values/>
+        <short_description>Drop of request(Inventory)</short_description>
+        <sys_class_name>sys_ui_policy</sys_class_name>
+        <sys_created_by>varsha.saste</sys_created_by>
+        <sys_created_on>2018-09-06 06:59:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dd7ce276db10230073641461399619f7</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>Drop of request(Inventory)</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GNS" source="x_249281_gns">b3f0adeedb53130073641461399619a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GNS">b3f0adeedb53130073641461399619a5</sys_scope>
+        <sys_update_name>sys_ui_policy_dd7ce276db10230073641461399619f7</sys_update_name>
+        <sys_updated_by>varsha.saste</sys_updated_by>
+        <sys_updated_on>2018-09-06 11:14:44</sys_updated_on>
+        <table>x_249281_gns_inventory</table>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_ui_policy>
+</record_update>

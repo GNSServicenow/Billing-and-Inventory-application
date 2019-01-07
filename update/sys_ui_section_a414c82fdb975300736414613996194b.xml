@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_ui_section caption="" section_id="a414c82fdb975300736414613996194b" sys_domain="global" table="x_249281_gns_billing" version="3" view="GNS_view">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>bill_number</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-14 06:45:58</sys_created_on>
+            <sys_id>13d3d86fdbbb13007364146139961916</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_249281_gns_billing" sys_domain="global" view="2414c82fdb9753007364146139961948">a414c82fdb975300736414613996194b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-14 06:45:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-14 06:45:58</sys_created_on>
+            <sys_id>97d3d86fdbbb13007364146139961916</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_249281_gns_billing" sys_domain="global" view="2414c82fdb9753007364146139961948">a414c82fdb975300736414613996194b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-14 06:45:58</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>actual_date</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-14 06:45:58</sys_created_on>
+            <sys_id>1bd3d86fdbbb13007364146139961916</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_249281_gns_billing" sys_domain="global" view="2414c82fdb9753007364146139961948">a414c82fdb975300736414613996194b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-14 06:45:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-14 06:45:58</sys_created_on>
+            <sys_id>9bd3d86fdbbb13007364146139961916</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_249281_gns_billing" sys_domain="global" view="2414c82fdb9753007364146139961948">a414c82fdb975300736414613996194b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-14 06:45:58</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>gst_number</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-14 06:45:58</sys_created_on>
+            <sys_id>1fd3d86fdbbb13007364146139961916</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_249281_gns_billing" sys_domain="global" view="2414c82fdb9753007364146139961948">a414c82fdb975300736414613996194b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-14 06:45:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>address</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-14 06:45:58</sys_created_on>
+            <sys_id>9fd3d86fdbbb13007364146139961916</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_249281_gns_billing" sys_domain="global" view="2414c82fdb9753007364146139961948">a414c82fdb975300736414613996194b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-14 06:45:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>description</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-14 06:45:58</sys_created_on>
+            <sys_id>13d3d86fdbbb13007364146139961917</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_249281_gns_billing" sys_domain="global" view="2414c82fdb9753007364146139961948">a414c82fdb975300736414613996194b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-14 06:45:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>category</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-14 06:45:58</sys_created_on>
+            <sys_id>93d3d86fdbbb13007364146139961917</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_249281_gns_billing" sys_domain="global" view="2414c82fdb9753007364146139961948">a414c82fdb975300736414613996194b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-14 06:45:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>bill_status</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-14 06:45:58</sys_created_on>
+            <sys_id>17d3d86fdbbb13007364146139961917</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_249281_gns_billing" sys_domain="global" view="2414c82fdb9753007364146139961948">a414c82fdb975300736414613996194b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-14 06:45:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_html_1</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-14 06:45:58</sys_created_on>
+            <sys_id>97d3d86fdbbb13007364146139961917</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="NULL" display_value="" name="x_249281_gns_billing" sys_domain="global" view="2414c82fdb9753007364146139961948">a414c82fdb975300736414613996194b</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-14 06:45:58</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption/>
+            <header>false</header>
+            <name>x_249281_gns_billing</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-07-20 09:05:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a414c82fdb975300736414613996194b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_249281_gns_billing</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="GNS" source="x_249281_gns">b3f0adeedb53130073641461399619a5</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="GNS">b3f0adeedb53130073641461399619a5</sys_scope>
+            <sys_update_name>sys_ui_section_a414c82fdb975300736414613996194b</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-07-20 09:05:34</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="GNS view" name="GNS_view">2414c82fdb9753007364146139961948</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

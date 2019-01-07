@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>quantity</field>
+        <global>true</global>
+        <messages/>
+        <name>Populate total amount 2 (Billing)</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+ //Type appropriate comment here, and begin script below
+	var amount = g_form.getValue('amount');
+	var quantity = g_form.getValue('quantity');
+	
+	
+ if(quantity != '' && amount != '')
+		{
+			
+// 		  var numbers = /^[0-9]+$/;
+// 		  if(quantity.match(numbers))
+// 		  {
+// 			quantity = parseInt(quantity);
+// 			amount = parseInt(amount);
+// 			g_form.setValue('total_amount',amount * quantity);
+// 		  }
+// 		  else
+// 		  {
+// 			  g_form.showFieldMsg('quantity','Enter only numbers','error');
+// 		  }
+			quantity = parseInt(quantity.replace(/\,/g,''),10);
+			amount = parseInt(amount.replace(/\,/g,''),10);
+			g_form.setValue('total_amount',amount * quantity);
+		}
+	else
+		{
+			g_form.setValue('total_amount','0');
+		}
+	
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-20 07:53:14</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>665c9f1ddb002300736414613996193b</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Populate total amount 2 (Billing)</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="GNS" source="x_249281_gns">b3f0adeedb53130073641461399619a5</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="GNS">b3f0adeedb53130073641461399619a5</sys_scope>
+        <sys_update_name>sys_script_client_665c9f1ddb002300736414613996193b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-03 07:12:27</sys_updated_on>
+        <table>x_249281_gns_billing</table>
+        <type>onChange</type>
+        <ui_type>10</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
